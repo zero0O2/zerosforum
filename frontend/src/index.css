@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+@import "tailwindcss";
+
+:root{
+    --cor01:#F2F2F2;
+    --cor02:#D93232;
+    --cor03:#591914;
+    --cor04:#260E09;
+    --cor05:#F25A38;
+    --cor06:#d8d8d8;
+    
+    --text:#2f2f2f;
+    --text2:#e8e8e8;
+    --sombra:#00000030;
+
+    --white:#ffffff;
+    --black:rgb(21, 21, 21);
+    
+    --Lexend:"Lexend";
+    --Castoro:"Castoro Titling";
+}
+
+html,body{
+    height: 100%;
+}
+
+body{
+    font-family: "Lexend", Arial, sans-serif;
+    background-color: var(--cor01);
+}
+
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.scroll::-webkit-scrollbar{
+  display: block;
+  width: 10px;
+  
+}
+
+.scroll::-webkit-scrollbar-thumb{
+  background-color: var(--cor02);
+}
+
+.scroll::-webkit-scrollbar-track{
+  background-color: var(--cor01);
+}
+
+
+.no-scrollbar {
+  scrollbar-width: none;   
+  -ms-overflow-style: none;
+}
+
+
+@keyframes rotateOnce {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(1090deg); }
+}
+
+.animate-rotate-once {
+  animation: rotateOnce 3s ease-in-out;
+}
