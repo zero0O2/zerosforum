@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import "tailwindcss";
 
-:root{
+.mode-light{
     --cor01:#F2F2F2;
     --cor02:#D93232;
     --cor03:#591914;
@@ -20,6 +20,26 @@
     --Lexend:"Lexend";
     --Castoro:"Castoro Titling";
 }
+
+.mode-dark{
+    --cor01:#131313;
+    --cor02:#d21212;
+    --cor03:#e6756d;
+    --cor04:#260E09;
+    --cor05:#F25A38;
+    --cor06:#303030;
+    
+    --text:#bfbfbf;
+    --text2:#2b2b2b;
+    --sombra:#00000030;
+
+    --white:#000000;
+    --black:rgb(255, 255, 255);
+    
+    --Lexend:"Lexend";
+    --Castoro:"Castoro Titling";
+}
+
 
 html,body{
     height: 100%;

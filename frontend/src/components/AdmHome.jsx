@@ -89,7 +89,7 @@ const AdmHome = ({users,setNavigate,setUsers,setNavigateUser,setPostNavUser,setE
                     setNavigate={setNavigate} 
                     setPostNavUser={setPostNavUser}/>
 
-                <div className='flex flex-col gap-[10px] overflow-y-scroll no-scrollbar'>
+                <div className='flex flex-col flex-1 gap-[10px] overflow-y-scroll no-scrollbar'>
                     <div className='w-full flex-1 max-[1400px]:flex-col flex  gap-[10px]'>
                         <AdmCardsPostsTotais users={users} dadosPosts={dadosPosts}/>
 
@@ -102,22 +102,8 @@ const AdmHome = ({users,setNavigate,setUsers,setNavigateUser,setPostNavUser,setE
                             createdAt={createdAt}
                         />
                     </div>
-                    
-                    <div className='w-full flex-1 max-[1400px]:flex-col flex  gap-[10px]'>
-                        <AdmCardsPostsTotais users={users} dadosPosts={dadosPosts}/>
-
-                        <AdmCardsPostsContent
-
-                            dadosPostsWeek={dadosPostsWeek}
-                            dadosPostsWeekTotal={dadosPostsWeekTotal}
-                            dadosPostsToday={dadosPostsToday}
-                            postsUploadsTotal={postsUploadsTotal}
-                            createdAt={createdAt}
-                        />
-                    </div>
-                    
-
                 </div>
+                    
             </div>
             <SpanMsg setSpan={setSpan} Span={span} title={"Dejesa deletar esse usuário"} opcion={"Deletar"} func={Delete} />
         </>

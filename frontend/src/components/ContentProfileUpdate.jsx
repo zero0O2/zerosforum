@@ -116,7 +116,7 @@ const ContentProfileUpdate = ({setNavigate}) => {
                                 setNameUpdate(e.target.value)
                                 setErros(prev => ({...prev,name:null}))
                                 }} value={nameUpdate} className="peer text-[var(--text)] h-[35px] w-[100%] outline-none border-2 rounded-[8px] px-[10px]" autoComplete="off" type="text" />
-                            <p className={`bg-[var(--cor01)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${nameUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Nome</p>
+                            <p className={`bg-[var(--cor01)] text-[var(--black)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${nameUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Nome</p>
                             <p className="absolute text-[11px] text-nowrap text-[var(--cor02)] -bottom-1/2 left-0 ">{erros.name && erros.name.message}</p>
                         </label>
 
@@ -125,7 +125,7 @@ const ContentProfileUpdate = ({setNavigate}) => {
                                 setEmailUpdate(e.target.value)
                                 setErros(prev => ({...prev,email:null}))
                             }} value={emailUpdate} className="peer text-[var(--text)] h-[35px] w-[100%] outline-none border-2 rounded-[8px] px-[10px]" autoComplete="off" type="text" />
-                            <p className={`bg-[var(--cor01)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${emailUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Email</p>
+                            <p className={`bg-[var(--cor01)] text-[var(--black)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${emailUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Email</p>
                             <p className="absolute text-[11px] text-nowrap text-[var(--cor02)] -bottom-1/2 left-0 ">{erros.email && erros.email.message}</p>
                         </label>
 
@@ -141,7 +141,7 @@ const ContentProfileUpdate = ({setNavigate}) => {
                                             setPasswordUpdate(e.target.value)
                                             setErros(prev => ({...prev,password:null}))
                                         }} value={passwordUpdate} className="peer text-[var(--text)] h-[35px] w-[100%] outline-none border-2 rounded-[8px] px-[10px]" autoComplete="off" type="text" />
-                                        <p className={`bg-[var(--cor01)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${passwordUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Nova senha</p>
+                                        <p className={`bg-[var(--cor01)] text-[var(--black)] absolute rounded-t-[5px]  -translate-y-1/2 transition-all duration-300 ${passwordUpdate ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Nova senha</p>
                                         <p className="absolute text-nowrap text-[11px] text-[var(--cor02)] -bottom-1/2 left-0 ">{erros.passwordUpdate && erros.passwordUpdate.message}</p>
                                     </label>
 
@@ -150,7 +150,7 @@ const ContentProfileUpdate = ({setNavigate}) => {
                                             setPassword(e.target.value)
                                             setErros(prev => ({...prev,passwordUpdate:null}))
                                         }} value={password} className="peer text-[var(--text)] h-[35px] w-[100%] outline-none border-2 rounded-[8px] px-[10px]" autoComplete="off" type="text" />
-                                        <p className={`bg-[var(--cor01)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${password ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Senha atual</p>
+                                        <p className={`bg-[var(--cor01)] text-[var(--black)] absolute rounded-t-[5px] -translate-y-1/2 transition-all duration-300 ${password ? "top-[-2px] left-[10px] px-[5px]":"top-1/2 left-[20px] px-[5px] peer-focus:top-[-2px] peer-focus:left-[20px]"}`}>Senha atual</p>
                                         <p className="absolute text-nowrap text-[11px] text-[var(--cor02)] -bottom-1/2 left-0 ">{erros.password && erros.password.message}</p>
                                     </label>
                                 </>

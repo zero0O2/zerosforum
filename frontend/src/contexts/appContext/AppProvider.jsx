@@ -3,6 +3,7 @@ import { AuthProvider } from "../auth/AuthProvider"
 import { PostProvider } from "../posts/PostProvider"
 import { useState } from "react"
 import { useContext } from "react"
+import {DisplayProvider} from "../display/DisplayProvider"
 
 
 const AppContext = createContext()
@@ -13,6 +14,7 @@ const AppProvider = ({children}) => {
 
     return(
         <AppContext.Provider value={{page, setPage}}>
+        <DisplayProvider>
         <AuthProvider>
         <PostProvider>
 
@@ -20,6 +22,7 @@ const AppProvider = ({children}) => {
             
         </PostProvider>
         </AuthProvider>
+        </DisplayProvider>
         </AppContext.Provider>
     )
 }
