@@ -57,8 +57,8 @@ const Login = () => {
                                 <input onChange={(e)=>{
                                     setEmail(e.target.value)
                                     setErrosVld(prev => ({...prev,email:null}))
-                                    }} value={email} className=" peer w-full h-[35px] px-[10px] rounded-[4px] border-2 outline-none" type="email" />
-                                <span className={`absolute bg-[var(--cor01)] flex left-[14px] px-[5px] text-[16px] top-1/2 transition-all duration-300 -translate-y-1/2 rounded-t-[2px] peer-focus:top-[-5px] ${email && "top-[-5px] text-[18px]"}`}>Email</span>
+                                    }} value={email} className=" peer w-full h-[35px] px-[10px] rounded-[4px] border-2 border-[var(--black)] text-[var(--text)] outline-none" type="email" />
+                                <span className={`absolute bg-[var(--cor06)] flex left-[14px] px-[5px] text-[var(--black)] text-[16px] top-1/2 transition-all duration-300 -translate-y-1/2 rounded-t-[2px] peer-focus:top-[-5px] ${email && "top-[-5px] text-[18px]"}`}>Email</span>
                             </label>
                             {errosVld.email && <p className="absolute text-[var(--cor02)] top-1/1">{errosVld.email.message}</p>}
                         </div>

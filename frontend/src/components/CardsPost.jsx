@@ -68,7 +68,7 @@ const CardsPost = ({post,setPosts}) => {
                         <img className="w-[50px] h-[50px] object-cover rounded-full" src={post.authorId?.avatar} alt="" />
                     </div>
                     {(post.content || post.title) && <div className="flex-1 flex flex-col overflow-hidden justify-center ">
-                        {post.title && <h1 className="text-[18px] font-bold">{post.title}</h1>}
+                        {post.title && <h1 className="text-[18px] text-[var(--text)] font-bold">{post.title}</h1>}
                         {post.content && <p className="text-[var(--text)] text-[16px]">{post.content}</p>}
                     </div>}
                 </div>
@@ -98,7 +98,7 @@ const CardsPost = ({post,setPosts}) => {
                 }
 
 
-                <div className="absolute top-1 left-3 text-[12px] text-[var(--balck)] gap-[5px] flex">
+                <div className="absolute top-1 left-3 text-[12px] text-[var(--black)] gap-[5px] flex">
                     {post.authorId?.role == "dev" && <p className="text-[var(--cor02)]">Dev</p>}
                     {post.authorId?.name}
                 </div>

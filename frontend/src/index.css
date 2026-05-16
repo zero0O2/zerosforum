@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
 @import "tailwindcss";
 
-.mode-light{
+:root{
     --cor01:#F2F2F2;
     --cor02:#D93232;
     --cor03:#591914;
